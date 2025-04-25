@@ -10,7 +10,7 @@ local function SendFischFinderWebhook(eventName, WEBHOOK_URL, jobId)
 	local sea = (Seaplace and Seaplace.Value == "secondsea") and "Second Sea" or "First Sea"
 	
     local embed = {
-        title = "NatHub Fisch Finder",
+        title = "ThanHub Fisch Finder",
         description = "Enter this job id using nathub below to join.",
         color = 0x0080FF,
         fields = {
@@ -23,8 +23,8 @@ local function SendFischFinderWebhook(eventName, WEBHOOK_URL, jobId)
     }
 
     local webhookData = {
-        username = "NatHub Fisch-Finder",
-        avatar_url = "https://media.discordapp.net/attachments/1360941350224396411/1361879600442904707/98e3df0604bdabe7b37ad4ccaf02ad0d.webp?ex=68005cb7&is=67ff0b37&hm=b742141585401eb1e6554eb0916ea757a7bcf8e9759ae181eb92493dd009ce56&=&format=webp",
+        username = "ThanHub Fisch-Finder",
+        avatar_url = "https://media.discordapp.net/attachments/1342846567094161488/1346724283753304084/Gambar_WhatsApp_2025-02-18_pukul_06.35.37_182c3226.jpg?ex=680c76ba&is=680b253a&hm=a9346accbf734d6aea99b7c6e7dd746f0a9a58136dec3c0329b8ca610b95511e&=&format=webp&width=1080&height=1079",
         embeds = {embed}
     }
 
@@ -38,11 +38,11 @@ local function SendFischFinderWebhook(eventName, WEBHOOK_URL, jobId)
     end)
 
     if success then
-        print("NatHub Fisch-Finder: Webhook sent for event - " .. eventName)
+        print("ThanHub Fisch-Finder: Webhook sent for event - " .. eventName)
     else
-        warn("NatHub Fisch-Finder: Failed to send webhook!")
+        warn("ThanHub Fisch-Finder: Failed to send webhook!")
     end
-	task.wait(2)
+	task.wait(1)
 end
 
 return SendFischFinderWebhook
