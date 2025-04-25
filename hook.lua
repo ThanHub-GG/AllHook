@@ -11,7 +11,7 @@ local function SendFischFinderWebhook(eventName, WEBHOOK_URL, jobId)
 	
     local embed = {
         title = "ThanHub Fisch Finder",
-        description = "Enter this job id using nathub below to join.",
+        description = "Enter this job id using ThanHub below to join.",
         color = 0x0080FF,
         fields = {
             {name = "[🔎] Event", value = "```" .. eventName .. "```"},
