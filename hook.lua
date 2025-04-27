@@ -42,7 +42,7 @@ local function SendFischFinderWebhook(eventName, WEBHOOK_URL, jobId)
     else
         warn("ThanHub Fisch-Finder: Failed to send webhook!")
     end
-	task.wait(1)
+	task.wait(3)
 end
 
 return SendFischFinderWebhook
